@@ -10,9 +10,7 @@ body {
         /* this is the font type, you can change it to anything (e.g. Arial) */
         text-align: center;
         /* this aligns all text in the center of your page, you can change it to left or right */
-        width: 80%;
-        justify-content: center;
-        /* the above two make the width of the entire page 80% of the browser window and centers it */
+
     }
     
 a {
