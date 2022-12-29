@@ -1,6 +1,24 @@
 /* This is a comment tag, you can ignore it. */
 /* Use this document to change the colors and font of ALL your pages */
 
+/* This sets page width to 80% and centers everything */
+
+html, body {
+    height: 80%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Remove the above if you don't want 80% width/centered body */
+
 body {
         background-color: white;
         /* this is the background color of your pages, change the 'white' to any other colour. You can also use hex values (e.g. 000000) */
