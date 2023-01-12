@@ -1,4 +1,4 @@
- body {
+body {
 	margin:0;
     background-color: white;
     color: #222;
@@ -142,7 +142,7 @@ table.footer {
         main {
           align-items: center;
           align-content: center;
-          margin-left:30%;
+          margin-left:auto;
         }
         
         th, td {
