@@ -5,7 +5,7 @@
 
 html, body {
     height: 80%;
-    min-width:100%;
+    min-width:98%;
 
 }
 
@@ -43,8 +43,6 @@ a:visited {
         /* this is the color of VISITED links */
     }
 
-h1 {
-    text-align:left;}
 
 /* If you want to change the color/font/etc for one specific page:
         In the <head> tag for that page, delete the line: <link rel="stylesheet" href="style.css">
@@ -62,3 +60,54 @@ h1 {
                                 </style>
     If you need help, ask me!
 */        
+
+
+
+table.header {
+    width:100%;
+    margin-right:0px;
+    margin-left:auto;
+    vertical-align:top;
+    height:10px;
+}
+
+.titlecell{
+        text-align:left;
+        vertical-align:top;
+        margin:0px 0px 30px;
+}
+
+.menucell{
+    text-align:right;
+    vertical-align:top;
+    width:40%;
+    padding-right:20px;
+}
+
+.title{
+    font-size:xx-large;
+    font-weight:bold;
+}
+
+.menu{
+    font-weight:lighter;
+    margin-top:10px;
+}
+
+.previousbutton {
+    text-align:left;
+    vertical-align:top;
+    width:50%;
+}
+
+.nextbutton {
+    text-align:right;
+    vertical-align:top;
+    width:50%;
+}
+
+.comicpage {
+    display:inline-block;
+    margin:0px auto 10px auto;
+    width:100%;
+}
