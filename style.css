@@ -41,7 +41,8 @@ a:visited {
         /* this is the color of VISITED links */
     }
 
-
+h1 {
+    text-align:left;}
 
 /* If you want to change the color/font/etc for one specific page:
         In the <head> tag for that page, delete the line: <link rel="stylesheet" href="style.css">
