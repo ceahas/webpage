@@ -113,11 +113,23 @@ table.header{
     width:33%;
 }
 
+.image{
+    width:100%;
+}
+
 .previousbutton{
     text-align:left;
     vertical-align:top;
     width:50%;
     margin-left:10px;
+}
+
+.previouslink{
+    margin-left:10px;
+}
+
+.nextlink{
+    margin-right:10px;
 }
 
 .nextbutton{
