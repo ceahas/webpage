@@ -20,6 +20,22 @@ html, body {
     src: url(Poppins-Light.ttf)
 }
   
+@font-face {
+    font-family: Merriweather;
+    src: url(Merriweather-Regular.ttf)
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url(Heebo-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: Karla;
+    src: url(Karla-VariableFont_wght.ttf)
+}
+
+
 
 html {
     display: table;

@@ -3,26 +3,26 @@
 
 /* This sets page width to 80% and centers everything */
 
-html, body {
+html,body{
     height: 80%;
     width:99%;
     
 
 }
 
-html {
+html{
     display: table;
     margin: auto;
 }
 
-body {
+body{
     display: table-cell;
     vertical-align: middle;
 }
 
 /* Remove the above if you don't want 80% width/centered body */
 
-body {
+body{
         background-color: white;
         /* this is the background color of your pages, change the 'white' to any other colour. You can also use hex values (e.g. 000000) */
         color: black;
@@ -34,12 +34,12 @@ body {
 
     }
     
-a {
+a{
         color: black;
         /* this is the color of UNVISITED links */
     }
     
-a:visited {
+a:visited{
         color: black;
         /* this is the color of VISITED links */
     }
@@ -64,7 +64,7 @@ a:visited {
 
 
 
-table.header {
+table.header{
     width:100%;
     margin-right:0px;
     margin-left:auto;
@@ -76,6 +76,10 @@ table.header {
         text-align:left;
         vertical-align:top;
         margin:0px 0px 30px;
+}
+
+.titlelink{
+    text-decoration:none;
 }
 
 .menucell{
@@ -95,20 +99,40 @@ table.header {
     margin-top:10px;
 }
 
-.previousbutton {
+.linkdiv{
+    height:7px;
+}
+
+.comictable {
+    margin:0px auto 0px auto;
+    width:85%;
+}
+
+.imagecell{
+    padding:8px;
+    width:33%;
+}
+
+.previousbutton{
     text-align:left;
     vertical-align:top;
     width:50%;
     margin-left:10px;
 }
 
-.nextbutton {
+.nextbutton{
     text-align:right;
     vertical-align:top;
     width:50%;
 }
 
-.comicpage {
+.caption{
+    text-align:left;
+    margin-left:10px;
+    margin-top:50px;
+}
+
+.comicpage{
     display:inline-block;
     margin:0px auto 10px auto;
     width:100%;
