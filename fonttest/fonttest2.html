@@ -2,16 +2,40 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>third rhyme</title>    
-        <link rel="stylesheet" href="fonttest.css">
+        <title>third rhyme</title> 
+        <style>
+            a {
+                color: black
+            }
+            a:hover {
+                color: black;
+            }
+
+            ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+        </style>   
+        <link rel="stylesheet" href="fonttest2.css">
         <style>
             a{
                 text-decoration:none;
             }
-            a:hover{
-                color:grey;
-            }
         </style>
+        <script type="text/javascript">
+                    function displayOutput() {
+                    var input = document.getElementById("userInput").value;
+                    var color = document.querySelector('select[name="color"]').value;
+                    if (input.length === 0) {
+                        alert("Please enter a valid input");
+                        return;
+                    }
+                    document.getElementById("result").innerHTML = input;
+                    document.getElementById("result").style.color = color;
+
+                    }
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
     </head>
 
@@ -23,7 +47,7 @@
                         <div class="title">third rhyme</div>
                 </td>
                 <td class="menucell">
-                    <div class="menu"><a href="https://shop.thirdrhyme.com/" id="link">click</a> <div style="height:7px;"></div><a href="https://more.thirdrhyme.com/" id="link2">clack</a></div> 
+                    <div class="menu"><ul id="test"><li><a href="https://shop.thirdrhyme.com/" id="link">click</a></li></ul> <div style="height:7px;"></div><ul id="test"><li><a href="https://more.thirdrhyme.com/" id="link2">clack</a></li></ul></div> 
             </td>
             </tr>
         </table>
@@ -57,12 +81,12 @@
                         <!-- below is the link for previous url, change the text between the quotation marks to point
                         to the previous comic -->     
                                                                              
-                        <a href="https://www.thirdrhyme.com/comic/1.html"  style="margin-left:10px;" id="link3">previous</a>
+                        <ul id="test"><li><a href="https://www.thirdrhyme.com/comic/1.html"  style="margin-left:10px;" id="link3">previous</a></li></ul>
                                                                          
                     </td>
                     <td class="nextbutton">
                                                                              
-                        <a href="https://www.thirdrhyme.com/"  style="margin-right:10px;" id="link4">next</a>                                            
+                        <ul id="test"><li><a href="https://www.thirdrhyme.com/"  style="margin-right:10px;" id="link4">next</a></li></ul>                                           
                      </td>
                 </tr>
                 <tr><td colspan="2">
@@ -110,18 +134,35 @@
                 No Underlines
             </button>
             <div style="height:10px"></div>            
-            <a href="https://fonts.google.com/?preview.text=third%20rhyme&preview.size=54&preview.text_type=custom">web fonts</a>
+            <ul id="test"><li><a href="https://fonts.google.com/?preview.text=third%20rhyme&preview.size=54&preview.text_type=custom">web fonts</a></li></ul>
+       
+        <form>
+            <table style="margin-left:auto;margin-right:auto;">
+                <tr><td>
+                        link color:<input type="text" size="12" id="lnk" /></td>
+                    <td>
+                        link hover color:<input type="text" size="12" id="hvr" />
+                    </td>
+                    <td>
+                        <input type="submit" onclick="myFunction()" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+          </form>
+
         </div>
 
 
-     
-      
-        <br><br>
-
-      
-      
-
         <script>
+            function myFunction() {
+                var linkURL = document.getElementById('lnk').value;
+                var hoverURL = document.getElementById('hvr').value;
+                var sheet = window.document.styleSheets[0];
+                sheet.insertRule('a { color: ' + linkURL + '}', sheet.cssRules.length);
+                sheet.insertRule('#test li:hover a { color: ' + hoverURL + '}', sheet.cssRules.length);
+                event.preventDefault(); 
+          }
+
             function GFG_Fun() {
                 var el = document.getElementById('link');
                 el.style.textDecoration = "none";
@@ -143,6 +184,8 @@
                 var el = document.getElementById('link4');
                 el.style.textDecoration = "underline";
             }
+           
+
         </script>
         </body>
 </html>
