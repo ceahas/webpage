@@ -1,0 +1,134 @@
+/* This is a comment tag, you can ignore it. */
+/* Use this document to change the colors and font of ALL your pages */
+
+/* This sets page width to 80% and centers everything */
+
+html, body {
+    height: 80%;
+    width:99%;
+    
+
+}
+
+@font-face {
+    font-family: SpecialElite;
+    src: url(SpecialElite-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Light.ttf)
+}
+  
+@font-face {
+    font-family: Merriweather;
+    src: url(Merriweather-Regular.ttf)
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url(Heebo-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: Karla;
+    src: url(Karla-VariableFont_wght.ttf)
+}
+
+
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Remove the above if you don't want 80% width/centered body */
+
+body {
+        background-color: white;
+        /* this is the background color of your pages, change the 'white' to any other colour. You can also use hex values (e.g. 000000) */
+  
+        /* this is the font colour */
+        font-family: Arial;
+        /* this is the font type, you can change it to anything (e.g. Arial) */
+        text-align: center;
+        /* this aligns all text in the center of your page, you can change it to left or right */
+
+    }
+    
+
+
+
+/* If you want to change the color/font/etc for one specific page:
+        In the <head> tag for that page, delete the line: <link rel="stylesheet" href="style.css">
+        In its place, enter:
+                                <style>
+
+                                </style>
+        In between the <style> tag, copy and paste the text from body { to the last }
+        Change the settings to whatever you'd like. For example:
+                                <style>
+                                    body {
+                                        background-color: black;
+                                        color: white;
+                                    }
+                                </style>
+    If you need help, ask me!
+*/        
+
+
+
+table.header {
+    width:100%;
+    margin-right:0px;
+    margin-left:auto;
+    vertical-align:top;
+    height:10px;
+}
+
+.titlecell{
+        text-align:left;
+        vertical-align:top;
+        margin:0px 0px 30px;
+}
+
+.menucell{
+    text-align:right;
+    vertical-align:top;
+    width:40%;
+    padding-right:20px;
+}
+
+.title{
+    font-size:xx-large;
+    font-weight:bold;
+}
+
+.menu{
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.previousbutton {
+    text-align:left;
+    vertical-align:top;
+    width:50%;
+    margin-left:10px;
+}
+
+.nextbutton {
+    text-align:right;
+    vertical-align:top;
+    width:50%;
+}
+
+.comicpage {
+    display:inline-block;
+    margin:0px auto 10px auto;
+    width:100%;
+}
